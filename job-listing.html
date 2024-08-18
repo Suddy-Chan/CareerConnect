@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1>Job Posting Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="job-listing.html">Job Listings</a></li>
+                    <li><a href="post-job.html">Post a Job</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                    <li><a href="admin-login.html">Admin Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="job-listing-container">
+            <section id="job-list" class="job-list">
+                <h2>Job Listings</h2>
+                <ul id="job-list-items">
+                    <!-- Job listings will be dynamically inserted here -->
+                </ul>
+            </section>
+            <section id="job-details" class="job-details">
+                <h2>Job Details</h2>
+                <div id="job-description">
+                    <!-- Detailed job description will be dynamically inserted here -->
+                    <p>Select a job from the list to view details.</p>
+                </div>
+            </section>
+        </main>
+        <div id="admin-controls" style="display: none;">
+            <button id="admin-logout">Admin Logout</button>
+        </div>
+        <footer>
+            <p>&copy; 2023 CareerConnect Hub. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
